@@ -3,29 +3,102 @@
 <head>
 <title>Lehe päis</title>
 </head>
-<body>
+<body style="background-color: slategray;">
+    
+<style>
+    .frame {
+        width: 500px;
+        height: 500px;
+        border: 3px solid #ccc;
+        background: #eee;
+        margin: auto;
+        padding: 15px 10px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-<div>
-    <h1>Yung Lean</h1>
-    <p>Jonatan Aron Leandoer Håstad. Born July 18, 1996, known professionally as Yung Lean, is a Swedish rapper.</p>
-    <p>Born in Minsk and raised in Stockholm, Yung Lean rose to prominence in 2013 with his song "Ginseng Strip 2002" which went viral on YouTube.</p>
-    <p>&nbsp;</p>
-    <a href="https://en.wikipedia.org/wiki/Yung_Lean"> Rohkem informatsiooni saab siit!</a>
-    <p>&nbsp;</p>
-    <a href="file:///C:/Users/nikis/OneDrive/T%C3%B6%C3%B6laud/Veebileht/Veebileht/index2.html"> Tabel with the songs</a>
-    <p>&nbsp;</p>
-    <img src="yunglean.jpg" alt="Yung Leandoer">
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  border-radius: 50%;
+}
+</style>
+
+<div class="split left">
+    <div class="centered">
+        <h1 style = "color:#831d1d; font-family: fantasy; font-size:75px;">Yung Lean</h1>
+        <p style = "color:#000000; font-family: courier; font-size:20px;">Jonatan Aron Leandoer Håstad. Born July 18, 1996, known professionally as Yung Lean, is a Swedish rapper.</p>
+        <p style = "color:#000000; font-family: courier; font-size:20px;">Born in Minsk and raised in Stockholm, Yung Lean rose to prominence in 2013 with his song "Ginseng Strip 2002" which went viral on YouTube.</p>
+        <a style = "color:#000000; font-family: courier; font-size:20px;" href = "https://en.wikipedia.org/wiki/Yung_Lean"> Rohkem informatsiooni saab siit!</a>
+        <a style = "color:#000000; font-family: courier; font-size:20px;" href="file:///C:/Users/nikis/OneDrive/T%C3%B6%C3%B6laud/Veebileht/Veebileht/index2.html"> Tabel with the songs</a>
+        <p>&nbsp;</p>
+        <div class="frame">
+            <img src="yunglean.jpg" alt="Nature">
+        </div>
+    </div>
 </div>
 
-<div>
-    <h1>Most popular songs</h1>
-    <ul>
-        <li>1. GingerStrip2002</li>
-        <li>2. Yoshi City</li>
-        <li>3. Ghosttown feat. Travis Scott</li>
-    </ul>
+<div class="split right">
+    <div class="centered">
+        <div>
+            <p>&nbsp;</p>
+            <table>
+                <tr>
+                    <th style = "color:#831d1d; font-family: courier; font-size:20px;">Warlord (Album, 2016)</th>
+                    <th style = "color:#831d1d; font-family: courier; font-size:20px;">Stranger (Album, 2017)</th>
+                    <th style = "color:#831d1d; font-family: courier; font-size:20px;">Starz (Album, 2020)</th>
+                </tr>
+                <tr>
+                    <td style = "color:#000000; font-family: courier; font-size:20px;">Miami Ultras</td>
+                    <td style = "color:#000000; font-family: courier; font-size:20px;">Agony</td>
+                    <td style = "color:#000000; font-family: courier; font-size:20px;">Acid at 7/11</td>
+                </tr>
+                <tr>
+                    <td style = "color:#000000; font-family: courier; font-size:20px;">Sippin'</td>
+                    <td style = "color:#000000; font-family: courier; font-size:20px;">Red Bottom Sky</td>
+                    <td style = "color:#000000; font-family: courier; font-size:20px;">Pikachu</td>
+                </tr>
+            </table>
+            <div>
+                <h1 style = "color:#831d1d; font-family: fantasy; font-size:75px;">Most popular songs</h1>
+                <ul>
+                    <li style = "color:#000000; font-family: courier; font-size:20px;">1. GingerStrip2002</li>
+                    <li style = "color:#000000; font-family: courier; font-size:20px;">2. Yoshi City</li>
+                    <li style = "color:#000000; font-family: courier; font-size:20px;">3. Ghosttown feat. Travis Scott</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-
 
 </body>
 </html>
